@@ -1,0 +1,137 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:hint="Login"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="-32dp"
+        android:focusable="true"
+        android:hint="Enter Name"
+        android:textColorHighlight="#F7B7C0F8"
+        android:textColorHint="#F7B7C0F8" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edLogin"
+        android:layout_alignEnd="@+id/edLogin"
+        android:layout_alignRight="@+id/edLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="42dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#F7B7C0F8" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginRight="-14dp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:background="@drawable/button_background"
+        android:hint="Login"
+        android:textColorHint="#30A0F8" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-15dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="75dp"
+        android:layout_toEndOf="@+id/textview"
+        android:layout_toRightOf="@+id/textview"
+        android:background="@drawable/button_background"
+        android:hint="Cancel"
+        android:textColorHint="#30A0F8" />
+
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a1"
+        tools:ignore="UnknownId" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="157dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/edPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="166dp"
+        android:hint="Remember me"
+        android:textColorHint="#30A0F8" />
+
+    <TextView
+        android:id="@+id/textviewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="110dp"
+        android:clickable="true"
+        android:hint="Don't have an account register now"
+        android:textColorHint="#4DDACD"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textviewForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:hint="Foget password?"
+        android:textColorHint="#4DDACD"
+        android:clickable="true"
+        android:textSize="12dp" />
+</RelativeLayout>
